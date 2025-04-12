@@ -2,8 +2,11 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import gzip
 movie_dict = pickle.load(open('movies_dict.pkl', 'rb'))
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+# similarity = pickle.load(open('similarity.pkl', 'rb'))
+with gzip.open('similarity.pkl.gz', 'rb') as f:
+    similarity = pickle.load(f)
 movies = pd.DataFrame(movie_dict)
 
 def fetch_poster(movie_id):
