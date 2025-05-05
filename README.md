@@ -46,4 +46,4 @@ A content-based movie recommender web app built using the **TMDb 5000 Movie Data
 
 - Add collaborative filtering for user-personalized recommendations  
 - Include movie trailers and ratings  
-- Deploy on Streamlit Cloud or Hugging Face Spaces  
+- Deploy on Streamlit Cloud or Hugging Face Spaces. 
